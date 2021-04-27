@@ -22,13 +22,13 @@ a
 {
     text-decoration: none;
     color: palevioletred;
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .form-box
 {
     width:380px;
-	height:480px;
+	height:500px;
 	position:relative;
 	margin:2% auto;
 	background:white;
@@ -164,11 +164,16 @@ span
           <form id='login' action="login.php"  method="post" class='input-group-login'>
              <input type='text'class='input-field'placeholder='Email Id' name="email" required >
 		     <input type='password'class='input-field'placeholder='Enter Password' name="password" required> <br> <br>			 
-			 <input type="text" name="captcha" readonly id="capt" style="width:auto; height:35px; display:inline-block; margin-right:20px;"> 
-			 <span> Captcha not visible <img src="refresh.jpg" width="40px" onclick="cap()"></span>
+			 <input type="text" name="captcha" readonly id="capt" style="width:100px; height:35px; display:inline-block; margin-right:5px;"> 
+			 Captcha not visible<img src="refresh.jpg" width="30px" onclick="cap()"
+			 <br>
+			 <br>
 			 <input type="text" class='input-field' placeholder='Captcha' name="captcha1" required> <br><br>		    
 		    <button type='submit' class='submit-btn'>Log in</button>
+			<br>
+	       Forgot password: <a href="reset_password.php">Click here to Reset</a>
 		 </form>
+		 
 
 
 		 <form id='register' action="register.php"  method="post" enctype="multipart/form-data" class='input-group-register'>
